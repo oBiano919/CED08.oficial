@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Curiosidades CED08</title>
+
+    <link rel="stylesheet" href="curio.css">
+</head>
+<body>
+     
+    <!-- Cabeçalho com logotipo e ícone do menu -->
+    <header class="custom-header">
+        <a href="index.html" class="logo">
+            <h1>CED 08</h1>
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="sobreNos.html"><span>📖</span> Sobre Nós</a></li>
+                <!-- <li><a href="Teatro.html"><span>🎭</span> Teatro "Corpo Fechado"</a></li> -->
+                <li><a href="ConciênciaNegra.html"><span>✊🏽</span> Consciência Negra</a></li>
+                <li><a href="conquistas.html"><span>🔬</span> CED 08 Ciência</a></li>
+                <li><a href="curiosidades.html"><span>🔎</span> Curiosidades</a></li>
+                <li><a href="https://www.instagram.com/ced08gama/"><span>📸</span> Instagram</a></li>
+                <li><a href="https://linktr.ee/ced08gama?fbclid=PAZXh0bgNhZW0CMTEAAaY-ps3hxEQBxYxWM96Z-MFCefbhvxPBCILXVytCb_EE5ttX6PuAIMvVspg_aem_TlQLX6Tx_wIWXVK3rwaXHA"><span>🔗</span> Informações Importantes</a></li>
+            </ul>
+        </nav>
+        <script src="script.js"></script>
+    </header>
+
+    <section id="apresentacao" class="section-apresentacao">
+        <div class="content">
+            <h2 style=" color: green;">CAMPEÕES OLIMGAMA 2024</h2>
+            <p>
+                A Olimgama é um campeonato público de futebol que reúne escolas do Gama em uma disputa emocionante. 
+                Mais do que competir, os jovens atletas têm a oportunidade de mostrar seu talento, fortalecer amizades e 
+                viver momentos inesquecíveis. Cada partida é um espetáculo de dedicação e paixão pelo esporte!
+            </p>
+            <a href="https://www.instagram.com/p/C_g8surukX2/" class="botao-instagram" target="_blank">
+                <span>Ver no Instagram</span>
+            </a>
+        </div>
+        
+        <img src="olimgama.jpeg" alt="Imagem representativa do CED 08">
+    </section>
+
+
+    <section id="projetos" class="section-projetos">
+        <h2>✨ Nossos Projetos ✨</h2>
+        <div class="projetos-container">
+            <div class="projeto-item">
+                <!-- <img src="teatro.jpg" alt="Teatro Corpo Fechado"> -->
+                <h3>🎭 Teatro "Corpo Fechado"</h3>
+                <p>Uma iniciativa que explora a cultura e identidade afro-brasileira através da arte.</p>
+                <button onclick="location.href='Teatro.html'" class="btn-projeto">Ver Mais</button>
+            </div>
+            <div class="projeto-item">
+                <!-- <img src="ciencia.jpg" alt="CED 08 Ciência"> -->
+                <h3>🔬 CED 08 Ciência</h3>
+                <p>Inovação e aprendizado nas áreas de tecnologia e ciências aplicadas.</p>
+                <button onclick="location.href='conquistas.html'" class="btn-projeto">Explorar</button>
+            </div>
+        </div>
+    </section>
+    
+     
+    <section id="cao-terapia" class="section-cao-terapia">
+        <h2>🐾 Cão Terapia</h2>
+        <p>
+            Conheça a iniciativa que utiliza cães como companheiros terapêuticos para ajudar alunos a superar a ansiedade no retorno às aulas. 
+            Após os desafios do ensino remoto, esses amigos de quatro patas trazem conforto, alegria e confiança para um ambiente escolar acolhedor.
+        </p>
+        <img src="pandora.jpeg" alt="Cão terapia com crianças na escola" style="height: auto; width: 50%;"  />
+        <BR>
+        <a href="https://www.instagram.com/p/C-C0KRQOtwN/" class="botao-reportagem" target="_blank">
+            Leia a reportagem completa
+        </a>
+    </section>
+    
+
+    <!-- <section id="contato" class="section-contato">
+        <h2>Entre em Contato</h2>
+        <p>Estamos aqui para ouvir você! Entre em contato para saber mais sobre o CED 08 e nossos projetos.</p>
+        <form>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section> -->
+    
+
+
+
+
+
+    <footer>
+        <div class="rodape">
+            <p>CED08 Gama - Educação para a Inclusão e Consciência</p>
+            <p>&copy; 2024 CED08 Gama. Todos os direitos reservados.</p>
+            <div class="desenvolver"><a href="desenvolvedores.html">Desenvolvedores</a></div>
+        </div>
+    </footer>
+
+
+    <button class="seta" onclick="topFunction()" id="topButton" title="Voltar ao topo">⬆️</button>
+
+    <script>
+        window.onscroll = function() { scrollFunction() };
+    
+        function scrollFunction() {
+            const topButton = document.getElementById("topButton");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+    
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        function topFunction() {
+    document.body.scrollTop = 0; // Para Safari
+    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+}
+
+function toggleMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    navMenu.classList.toggle('active');
+}
+
+    </script>
+    
+    <style>
+        #topButton {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 18px;
+            padding: 10px;
+        }
+    </style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</body>
+</html>  
